@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Frank Storefront</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFB6C1; /* Lisa Frank pink */
+    }
+    header {
+      background-color: #00FFFF; /* Lisa Frank turquoise */
+      padding: 20px;
+      text-align: center;
+    }
+    header nav a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background-color: #FF69B4; /* Lisa Frank hot pink */
+    }
+    header nav a:hover {
+      background-color: #FFD700; /* Lisa Frank yellow */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .product {
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #FFFF00; /* Lisa Frank yellow */
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    form {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <section id="home">
+      <h1>Welcome to Lisa Frank Storefront</h1>
+      <p>We bring you the most colorful and vibrant products inspired by Lisa Frank's iconic designs!</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <p>Description of Product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Lisa Frank Storefront. All rights reserved.</p>
+  </footer>
+</body>
+</html>
