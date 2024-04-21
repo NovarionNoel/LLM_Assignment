@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Frank Storefront</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #FF69B4, #FF1493, #FF4500);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF1493;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: #FF69B4;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #FF4500;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background-color: #FF69B4;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 2px solid #FF1493;
+        }
+        form button {
+            background-color: #FF1493;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lisa Frank Storefront</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#products">Products</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Lisa Frank Storefront!</h2>
+        <p>Discover the world of Lisa Frank with our vibrant and colorful products.</p>
+    </section>
+
+    <section id="products" class="product-container">
+        <div class="product">
+            <img src="path/to/product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+        </div>
+        <div class="product">
+            <img src="path/to/product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Lisa Frank Storefront. All rights reserved.
+    </footer>
+
+    <script>
+        // Add any JavaScript functionality here
+    </script>
+</body>
+</html>
